@@ -25,7 +25,7 @@ SECRET_KEY = 'p#8u4pj00h*u9s_#9oq0mcb_efv7&h#=0t)9=1g=4@hns!ugdt'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = False
 
-ALLOWED_HOSTS = ['127.0.0.1']
+ALLOWED_HOSTS = ['127.0.0.1','course-registration-task.herokuapp.com']
 
 
 # Application definition
