@@ -1,0 +1,73 @@
+::-webkit-scrollbar {
+    width: 1px;
+    background: transparent;
+}
+::-webkit-scrollbar-thumb {
+    background: cyan;
+}
+body{
+  background-color: black;
+  -moz-transform: scale(0.75, 0.75); /* Moz-browsers */
+  zoom: 0.75; /* Other non-webkit browsers */
+  zoom: 75%; /* Webkit browsers */
+}
+h1{
+  padding-top: 2%;
+  color: white;
+  text-align: center;
+  font-family: 'Roboto', sans-serif;
+}
+p{
+  background-color: black;
+  width: 80%;
+  margin: 0;
+  color: cyan;
+  font-size: 150%;
+}
+table{
+  text-align: center;
+  margin-bottom: 2%;
+  border-spacing: 45px!important;
+}
+td{
+  width: 50%;
+}
+select{
+  border: 3px;
+  padding: 1% 1% 1% 1%;
+  border-style: double;
+}
+.formbox{
+  background-color: cyan;
+  padding-top: 2%;
+  padding-bottom: 2%;
+  padding-right: 2%;
+  margin-top: 2%;
+  margin-bottom: 3%;
+  width: 80%;
+  border-radius: 15px;
+}
+.form-control{
+  border: 1px solid black;
+}
+.messages{
+  margin-top: 2%;
+  background-color: black!important;
+  text-align: center;
+}
+.instruct{
+  color: white;
+}
+#inst{
+  font-size: 10px!important;
+  padding-left: 8%;
+}
+#SubmitButton{
+  background-color: black!important;
+  color: white;
+}
+#errormsg{
+  color: red;
+  border-radius: 5px;
+  width: 100%;
+}

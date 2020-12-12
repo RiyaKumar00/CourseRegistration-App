@@ -1,0 +1,88 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Registration</title>
+    {% load static %}
+    <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+    <link rel="stylesheet" href="{% static 'css/bootstrap.min.css' %}" >
+    <link rel="stylesheet" href="{% static 'css/Register_master.css' %}">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <script type="text/javascript" src="{% static 'js/Register_JS.js' %}"></script>
+  </head>
+  <body>
+    <h1>SELECT COURSES</h1>
+    <div id="inst" class="container" align="justify">
+      <p class="instruct">INSTRUCTIONS:</p>
+      <p class="instruct">1. Use Ctrl + Click to select multiple courses.</p>
+      <p class="instruct">2. You can select only 1 course in University Elective.</p>
+    </div>
+    <div class="container" align="center">
+      <div class="formbox" align="center">
+          <table>
+            <tr>
+              <th><h4>UNIVERSITY CORE</h4></th>
+              <th><h4>PROGRAMME CORE</h4></th>
+            </tr>
+            <tr>
+              <td>
+                <select id="uc" class="" name="" multiple size="7">
+                  <option value="4">Engineering Chemistry - 4 credits</option>
+                  <option value="3">Problem Solving and Programming - 3 credits</option>
+                  <option value="2">Technical English - II - 2 credits</option>
+                  <option value="4">Statistics for Engineers - 4 credits</option>
+                  <option value="1">Introduction to Innovative Projects - 1 credits</option>
+                  <option value="2">Lean Start-up Management - 2 credits</option>
+                  <option value="1">Arithmetic Problem Solving - 1 credits</option>
+                </select>
+              </td>
+              <td>
+                <select id="pc" class="" name="" multiple size="7">
+                  <option value="4">Digital Logic and Design - 4 credits</option>
+                  <option value="4">Network and Communication - 4 credits</option>
+                  <option value="4">Java Programming - 4 credits</option>
+                  <option value="3">Computer Architecture and Organization - 3 credits</option>
+                  <option value="4">Theory of Computation and Compiler Design - 4 credits</option>
+                  <option value="4">Data Structures and Algorithms - 4 credits</option>
+                  <option value="4">Database Management Systems - 4 credits</option>
+                </select>
+              </td>
+            </tr>
+            <tr>
+              <th><br><h4>UNIVERSITY ELECTIVE</h4></th>
+              <th><br><h4>PROGRAMME ELECTIVE</h4></th>
+            </tr>
+            <tr>
+              <td>
+                <select id="ue" class="" name="" size="7">
+                  <option value="4">Image Processing - 4 credits</option>
+                  <option value="4">Web Security - 4 credits</option>
+                  <option value="4">Android Security - 4 credits</option>
+                  <option value="4">Cyber Forensics and Investigation - 4 credits</option>
+                  <option value="3">Social Entrepreneurship - 3 credits</option>
+                  <option value="4">Software Design and Development - 4 credits</option>
+                  <option value="4">Machine Learning Essentials - 4 credits</option>
+                </select>
+              </td>
+              <td>
+                <select id="pe" class="" name="" multiple size="7">
+                  <option value="3">Blockchain and Cryptocurrency Technologies - 3 credits</option>
+                  <option value="4">Internet of Things - 4 credits</option>
+                  <option value="4">Artificial Intelligence - 4 credits</option>
+                  <option value="4">Data Visualization - 4 credits</option>
+                  <option value="4">Web Mining - 4 credits</option>
+                  <option value="4">Cyber Security - 4 credits</option>
+                  <option value="4">Human Computer Interaction - 4 credits</option>
+                </select>
+              </td>
+            </tr>
+          </table>
+          <button id="SubmitButton" class="btn btn-primary" onclick="calculate()">View Total Credits</button>
+      </div>
+      <p id="result" >TOTAL NUMBER OF CREDITS SELECTED = 0</p>
+      <br>
+    </div>
+  </body>
+</html>
